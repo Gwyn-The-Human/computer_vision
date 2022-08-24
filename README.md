@@ -14,3 +14,6 @@
 
 #wrote a little rock-paper-scissors game; used the random library to randomise computer choice. 
 #tried to do something more itneresting with the logic for get_winner than just hard coding "if user == rock and computer #== paper" etc. etc.; instead tried having a list of possible choices, and arranging them so that each item loses to the #left and wins to the right. From this list we can describe how the choices interact by comparing the indexes of the #players' choices in that list. 
+
+
+#Do i need a git ignore?  
