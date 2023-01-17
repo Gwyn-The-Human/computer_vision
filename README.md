@@ -1,26 +1,26 @@
 # computer_vision
-#Project to build a to build a rock-paper-scissors game in which the computer will use compture vision to play against me!
+Project to build a to build a rock-paper-scissors game in which the computer will use compture vision to play against me!
 
 
 # FIRST MILESTONE 
 
-#Trained a model using https://teachablemachine.withgoogle.com/ to recognise 4 classes (rock, paper, scissors and none) trained on about 3000 images for each class
-#The model is saved as keras_model.h5 in this repo. 
-#I'll be using the model to build a rock-paper-scissors game in which the computer will use compture vision to play against me! But I will win anyway! 
+Trained a model using https://teachablemachine.withgoogle.com/ to recognise 4 classes (rock, paper, scissors and none) trained on about 3000 images for each class
+The model is saved as keras_model.h5 in this repo. 
+I'll be using the model to build a rock-paper-scissors game in which the computer will use compture vision to play against me! But I will win anyway! 
 
 
 # SECOND MILESTONE
 
 
-#wrote a little rock-paper-scissors game; used the random library to randomise computer choice. 
-#tried to do something more itneresting with the logic for get_winner than just hard coding "if user == rock and computer #== paper" etc. etc.; instead tried having a list of possible choices, and arranging them so that each item loses to the #left and wins to the right. From this list we can describe how the choices interact by comparing the indexes of the #players' choices in that list. 
+wrote a little rock-paper-scissors game; used the random library to randomise computer choice. 
+tried to do something more itneresting with the logic for get_winner than just hard coding "if user == rock and computer == paper" etc. etc.; instead tried having a list of possible choices, and arranging them so that each item loses to the left and wins to the right. From this list we can describe how the choices interact by comparing the indexes of the players' choices in that list. 
 
 
 # THIRD MILESTONE
-#created a new environment:
+created a new environment:
 
 ```
-# Name                    Version                   Build  Channel
+ Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                        main  
 _openmp_mutex             5.1                       1_gnu  
 absl-py                   1.2.0                    pypi_0    pypi
@@ -118,13 +118,13 @@ zlib                      1.2.12               h7f8727e_2
 
 # FOURTH MILESTONE:
 
-#edited RPS-Template for my own use in camera_rps.py to remove while loop because I thought it would be more efficient for #the model to only have to view one image rather than have it continuously cycling through images as the game runs. I #imported numpy and used argmax to return the computer's best estimate of what the user is doing (rock/paper etc.). 
+Edited RPS-Template for my own use in camera_rps.py to remove while loop because I thought it would be more efficient for the model to only have to view one image rather than have it continuously cycling through images as the game runs. I imported numpy and used argmax to return the computer's best estimate of what the user is doing (rock/paper etc.). 
 
-#created countdown function, and added it to my rock paper scissors game from SECOND MILESTONE. Put it all together. 
+created countdown function, and added it to my rock paper scissors game from SECOND MILESTONE. Put it all together. 
 
 
-#seems to run fine but:
-#-Sometimes the countdown will skip a number and just say "3,2, GO" or "2,1,GO" (instead of "3,2,1,GO")
-#-still need to add a quit option. As it is now you can't escape!!
-#-the game usually crashes before getting to the end. 
-#-Need to add a git ignore to repo,
+seems to run fine but:
+-Sometimes the countdown will skip a number and just say "3,2, GO" or "2,1,GO" (instead of "3,2,1,GO")
+-still need to add a quit option. As it is now you can't escape!!
+-the game usually crashes before getting to the end. 
+-Need to add a git ignore to repo,
